@@ -5,6 +5,8 @@ namespace AnimalShelter.Models
     public int AnimalId { get; set; }
     public string Name { get; set; }
 
+    public string Url {get;set;}
+
 
     //String => Cast as DATETIME mysql
     public string Date { get; set; }

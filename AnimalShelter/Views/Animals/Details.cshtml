@@ -1,0 +1,20 @@
+@{
+  Layout = "_Layout";
+}
+
+@model AnimalShelter.Models.Animal
+
+<h2>Animal Details</h2>
+<hr/>
+<h3> @Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(model => model.Name)</h3>
+<h3> @Html.DisplayNameFor(model => model.Date) : @Html.DisplayFor(model => model.Date)</h3>
+<h3> @Html.DisplayNameFor(model => model.AnimalId) : @Html.DisplayFor(model => model.AnimalId)</h3>
+
+<img src=@Model.Url width="250"/>
+
+@* <img> @Html.DisplayFor(model => model.Url)</>
+
+<p>@Html.ActionLink("Show dog", $"{@Model.Url}")</p> *@
+
+
+<p>@Html.ActionLink("Back to list", "Index")</p>
